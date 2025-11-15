@@ -1,0 +1,4 @@
+dependencies {
+    // Para anotaciones como @Table, @Id
+    compileOnly 'org.springframework.data:spring-data-commons'
+}

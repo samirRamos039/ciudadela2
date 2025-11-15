@@ -1,0 +1,24 @@
+rootProject.name = 'ciudadela2'
+
+// --- Módulos del Dominio ---
+include ':domain-model'
+project(':domain-model').projectDir = file('./domain/model')
+
+include ':domain-ports'
+project(':domain-ports').projectDir = file('./domain/ports')
+
+include ':domain-usecases'
+project(':domain-usecases').projectDir = file('./domain/usecases')
+
+
+// --- Módulos de Infraestructura ---
+include ':infra-web-entrypoint'
+project(':infra-web-entrypoint').projectDir = file('./infrastructure/entry-points/web')
+
+include ':infra-db-adapter'
+project(':infra-db-adapter').projectDir = file('./infrastructure/driver-adapters/db')
+
+
+// --- Módulo de Aplicación ---
+include ':app-main'
+project(':app-main').projectDir = file('./application')
