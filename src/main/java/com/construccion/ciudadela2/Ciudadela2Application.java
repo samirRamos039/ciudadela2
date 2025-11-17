@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Ciudadela2Application {
 
-	 void main() {
-		SpringApplication.run(Ciudadela2Application.class);
+	public static void main(String[] args) {
+		SpringApplication.run(Ciudadela2Application.class, args);
 		IO.println("hola a todos");
 	}
 

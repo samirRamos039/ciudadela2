@@ -1,4 +1,5 @@
-
+package domain.entities.models.gateways;
+import domain.entities.models.InformeConstruccion;
 import reactor.core.publisher.Flux;
 
 public interface InformeGateways {
