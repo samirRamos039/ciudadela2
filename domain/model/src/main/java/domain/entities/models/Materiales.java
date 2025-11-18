@@ -1,3 +1,4 @@
+package domain.entities.models;
 
 public record Materiales(
     int cemento, 

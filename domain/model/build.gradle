@@ -1,4 +1,12 @@
+plugins {
+    // Esto habilita las configuraciones modernas de dependencias como 'compileOnly'
+    id 'java-library' 
+    
+}
+
 dependencies {
-    // Para anotaciones como @Table, @Id
+   implementation(platform('org.springframework.boot:spring-boot-dependencies'))
+
+    // La dependencia que fallaba: ahora su versión será encontrada en el BOM
     compileOnly 'org.springframework.data:spring-data-commons'
 }

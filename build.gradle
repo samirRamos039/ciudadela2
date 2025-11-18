@@ -13,16 +13,19 @@ java {
 		languageVersion = JavaLanguageVersion.of(25)
 	}
 }
-
+ 
+ bootJar {
+    // Reemplaza 'com.construccion.MainApplication' con el nombre real
+    // y completo de tu clase principal (incluyendo el paquete).
+    mainClass = 'com.construccion.src.main.Ciudadela2Application' 
+}
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
 	}
 }
 
-repositories {
-	mavenCentral()
-}
+
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'

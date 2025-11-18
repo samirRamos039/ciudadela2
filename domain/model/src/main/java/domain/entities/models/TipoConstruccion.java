@@ -1,3 +1,5 @@
+package domain.entities.models;
+
 
 public record TipoConstruccion(
     String nombre, 

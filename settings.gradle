@@ -1,5 +1,13 @@
 rootProject.name = 'ciudadela2'
 
+dependencyResolutionManagement {
+    // Esto asegura que todos los submódulos hereden los repositorios
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenCentral()
+    }
+}
+
 // --- Módulos del Dominio ---
 include ':domain-model'
 project(':domain-model').projectDir = file('./domain/model')

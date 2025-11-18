@@ -1,4 +1,6 @@
+package domain.entities.models;
 
+import java.time.LocalDate;
 
 public record SolicitudConstruccion(
     String id, 
