@@ -1,5 +1,7 @@
 plugins {
+    id 'java'
     id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
 }
 
 dependencies {
@@ -12,5 +14,5 @@ dependencies {
 
 bootJar {
     enabled = true
-    mainClass = 'com.clinica.MainApplication'
+    mainClass = 'com.construccion.ciudadela2.Ciudadela2Application'
 }

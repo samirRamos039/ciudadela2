@@ -8,7 +8,7 @@ public class Ciudadela2Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Ciudadela2Application.class, args);
-		IO.println("hola a todos");
+		System.out.println("hola a todos");
 	}
 
 }

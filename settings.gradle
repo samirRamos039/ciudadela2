@@ -16,17 +16,17 @@ include ':domain-ports'
 project(':domain-ports').projectDir = file('./domain/ports')
 
 include ':domain-usecases'
-project(':domain-usecases').projectDir = file('./domain/usecases')
+project(':domain-usecases').projectDir = file('./domain/usecase')
 
 
 // --- Módulos de Infraestructura ---
 include ':infra-web-entrypoint'
-project(':infra-web-entrypoint').projectDir = file('./infrastructure/entry-points/web')
+project(':infra-web-entrypoint').projectDir = file('./infraestructura/driverAdapters/web')
 
 include ':infra-db-adapter'
-project(':infra-db-adapter').projectDir = file('./infrastructure/driver-adapters/db')
+project(':infra-db-adapter').projectDir = file('./infraestructura/entryPoint/db')
 
 
 // --- Módulo de Aplicación ---
 include ':app-main'
-project(':app-main').projectDir = file('./application')
+project(':app-main').projectDir = file('./appMain/aplication')
