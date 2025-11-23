@@ -9,4 +9,5 @@ public record InformeConstruccion(
     Map<String, Long> terminadasPorTipo,
     List<OrdenConstruccion> enProgreso,                             
     LocalDate fechaFinProyecto
+    //bbg
     ) {}
