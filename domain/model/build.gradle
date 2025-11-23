@@ -1,12 +1,12 @@
 plugins {
     // Esto habilita las configuraciones modernas de dependencias como 'compileOnly'
     id 'java-library' 
-    
 }
 
 dependencies {
-   implementation(platform('org.springframework.boot:spring-boot-dependencies'))
+    implementation(platform('org.springframework.boot:spring-boot-dependencies:3.4.0'))
 
     // La dependencia que fallaba: ahora su versión será encontrada en el BOM
     compileOnly 'org.springframework.data:spring-data-commons'
+    implementation 'io.projectreactor:reactor-core'
 }
