@@ -14,11 +14,12 @@ java {
 	}
 }
  
- bootJar {
-    // Reemplaza 'com.construccion.MainApplication' con el nombre real
-    // y completo de tu clase principal (incluyendo el paquete).
-    mainClass = 'com.construccion.src.main.Ciudadela2Application' 
-}
+// bootJar {
+//    // Reemplaza 'com.construccion.MainApplication' con el nombre real
+//    // y completo de tu clase principal (incluyendo el paquete).
+//    mainClass = 'com.construccion.src.main.Ciudadela2Application' 
+// }
+bootJar.enabled = false
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
