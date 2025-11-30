@@ -1,10 +1,10 @@
 plugins {
+
     id 'java'
 }
 
 dependencies {
     implementation project(':domain-ports')
     implementation project(':domain-model')
-    implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
-    runtimeOnly 'io.r2dbc:r2dbc-h2' // Ejemplo con H2
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
 }
