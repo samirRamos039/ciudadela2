@@ -1,9 +1,0 @@
-plugins {
-    // Es CRUCIAL añadir uno de los plugins base de Java aquí
-    id 'java-library' 
-}
-
-dependencies {
-    // Ahora que 'java-library' está aplicado, 'implementation' funciona
-    implementation project(':domain-model')
-}

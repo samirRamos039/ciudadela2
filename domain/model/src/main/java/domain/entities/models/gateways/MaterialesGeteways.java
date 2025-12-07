@@ -13,12 +13,12 @@ public interface MaterialesGeteways {
     Mono<Void> actualizar(String id, Materiales materiales);
     Mono<Boolean> eliminar(String id);
     
-    // Operaciones específicas del dominio
+    /*  Operaciones específicas del dominio
     Mono<Boolean> verificarDisponibilidad(Materiales materialesRequeridos);
     Mono<Materiales> consumirMateriales(Materiales materialesAConsumir);
     Mono<Materiales> agregarMateriales(Materiales materialesAAgregar);
     
     // Consultas específicas
     Mono<Integer> obtenerStockTotal();
-    Flux<Materiales> buscarPorRangoDeCemento(int min, int max);
+    Flux<Materiales> buscarPorRangoDeCemento(int min, int max);*/
 }
