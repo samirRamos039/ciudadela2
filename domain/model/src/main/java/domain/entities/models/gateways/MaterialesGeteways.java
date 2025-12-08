@@ -8,10 +8,10 @@ public interface MaterialesGeteways {
     
     // Operaciones CRUD reactivas
     Mono<Materiales> guardar(Materiales materiales);
-    Mono<Materiales> buscarPorId(String id);
+   // Mono<Materiales> buscarPorId(String id);
     Flux<Materiales> buscarTodos();
-    Mono<Void> actualizar(String id, Materiales materiales);
-    Mono<Boolean> eliminar(String id);
+   // Mono<Void> actualizar(String id, Materiales materiales);
+    //Mono<Boolean> eliminar(String id);
     
     /*  Operaciones específicas del dominio
     Mono<Boolean> verificarDisponibilidad(Materiales materialesRequeridos);
