@@ -1,19 +1,19 @@
 package web.materiales;
 
 import org.modelmapper.ModelMapper;
-import web.materiales.collections.MaterialCollection;
-import web.materiales.entities.Materiales;
+import web.collections.MaterialCollections;
+import domain.entities.models.Materiales;
 
 
 public class MaterialMapper {
     
     private static final ModelMapper modelMapper = new ModelMapper();
 
-    public static MaterialModel toModel(MaterialCollection materialCollection) {
-        return modelMapper.map(materialCollection, MaterialModel.class);
+    public static Materiales toMateriales(MaterialCollections materialCollection) {
+        return modelMapper.map(materialCollection, Materiales.class);
     }
 
-    public static MaterialCollection toCollection(Materiales materiales) {
-        return modelMapper.map(materiales, MaterialCollection.class);
+    public static MaterialCollections toMaterialCollections(Materiales materiales) {
+        return modelMapper.map(materiales, MaterialCollections.class);
     }
 }

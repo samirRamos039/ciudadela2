@@ -5,7 +5,7 @@ plugins {
 dependencies {
     implementation(platform('org.springframework.boot:spring-boot-dependencies:3.4.0'))
 
-    implementation project(':domain-ports')
     implementation project(':domain-model')
     implementation 'org.springframework:spring-context'
+    implementation 'io.projectreactor:reactor-core'
 }

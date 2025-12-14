@@ -1,6 +1,6 @@
-package infraestructura.entryPoint.db.materiales;
+package materiales;
 
-import domain.entities.models.materiales.Materiales;
+import domain.entities.models.Materiales;
 import domain.usecase.MaterialesUseCase;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.server.ServerRequest;
@@ -11,14 +11,14 @@ import reactor.core.publisher.Mono;
 @Service
 public class MaterialesHanddler {
 
-     private final materialesUseCase materialesUseCase;
+     private final MaterialesUseCase materialesUseCase;
 
-    public MaterialesRoutes(materialesUseCase materialesUseCase) {
+    public MaterialesHanddler(MaterialesUseCase materialesUseCase) {
         this.materialesUseCase = materialesUseCase;
     }
 
     public Mono<ServerResponse> saveMaterial(ServerRequest serverRequest) {
-        return reqiest.bodyToMono(Materiales.class)
+        return serverRequest.bodyToMono(Materiales.class)
                 .flatMap(materialesUseCase::createMaterial)
                 .flatMap(material -> ServerResponse.ok().bodyValue(material))
                 .switchIfEmpty(ServerResponse.badRequest().build())

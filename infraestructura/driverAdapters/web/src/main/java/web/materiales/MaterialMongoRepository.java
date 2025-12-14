@@ -1,8 +1,8 @@
 package web.materiales;
 
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
-import web.materiales.documents.MaterialCollections;
+import web.collections.MaterialCollections;
 
-public interface MaterialMongoRepository extends ReactivMongoRepository<MaterialCollections, Integer> {
+public interface MaterialMongoRepository extends ReactiveMongoRepository<MaterialCollections, Integer> {
     
 }
