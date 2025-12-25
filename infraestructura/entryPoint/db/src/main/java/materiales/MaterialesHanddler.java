@@ -1,7 +1,7 @@
 package materiales;
 
 import domain.entities.models.Materiales;
-import domain.usecase.MaterialesUseCase;
+import domain.usecases.MaterialesUseCase;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
@@ -24,6 +24,10 @@ public class MaterialesHanddler {
                 .switchIfEmpty(ServerResponse.badRequest().build())
                 .onErrorResume(e -> ServerResponse.badRequest().bodyValue(e.getMessage()));
     
-}
+    }
+
+    public Mono<ServerResponse> obtenerTodosLosMateriales(ServerRequest serverRequest) {
+        return ServerResponse.ok().body(materialesUseCase.getAllMaterials(), Materiales.class);
+    }
     
 }

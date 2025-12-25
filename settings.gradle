@@ -15,8 +15,8 @@ project(':domain-model').projectDir = file('./domain/model')
 include ':domain-ports'
 project(':domain-ports').projectDir = file('./domain/ports')
 
-include ':domain-usecases'
-project(':domain-usecases').projectDir = file('./domain/usecase')
+include ':usecase'
+project(':usecase').projectDir = file('domain/usecase')
 
 
 // --- Módulos de Infraestructura ---

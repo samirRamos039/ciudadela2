@@ -14,10 +14,10 @@ public class MaterialesRoutes {
     @Bean
     public RouterFunction<ServerResponse> materialesRouterFunction(MaterialesHanddler handler) {
         return route(POST("/materiales/crear"), handler::saveMaterial)
-                .andRoute(GET("/materiales/{id}"), handler::obtenerMaterialPorId)
-                .andRoute(GET("/materiales"), handler::obtenerTodosLosMateriales)
-                .andRoute(PUT("/materiales/actualizar/{id}"), handler::actualizarMaterial)
-                .andRoute(DELETE("/materiales/eliminar/{id}"), handler::eliminarMaterial);
+                .andRoute(GET("/materiales"), handler::obtenerTodosLosMateriales);
+                // .andRoute(GET("/materiales/{id}"), handler::obtenerMaterialPorId)
+                // .andRoute(PUT("/materiales/actualizar/{id}"), handler::actualizarMaterial)
+                // .andRoute(DELETE("/materiales/eliminar/{id}"), handler::eliminarMaterial);
                 
     }
 

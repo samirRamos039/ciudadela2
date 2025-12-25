@@ -1,4 +1,4 @@
-package domain.usecase;
+package domain.usecases;
 
 import domain.ports.MaterialesGateway;
 import domain.entities.models.Materiales;
@@ -20,8 +20,8 @@ public class MaterialesUseCase {
         return materialesGateway.guardar(material);
     }
 
-    public Flux<Material> getAllMaterials() {
-        return materialesGeteways.buscarTodos();
+    public Flux<Materiales> getAllMaterials() {
+        return materialesGateway.buscarTodos();
     }
     
     
