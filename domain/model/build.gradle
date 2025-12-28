@@ -9,4 +9,6 @@ dependencies {
     // La dependencia que fallaba: ahora su versión será encontrada en el BOM
     compileOnly 'org.springframework.data:spring-data-commons'
     implementation 'io.projectreactor:reactor-core'
+    compileOnly 'org.projectlombok:lombok:1.18.36'
+    annotationProcessor 'org.projectlombok:lombok:1.18.36'
 }

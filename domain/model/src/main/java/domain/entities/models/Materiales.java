@@ -1,10 +1,14 @@
 package domain.entities.models;
 
-public record Materiales(
-    int id,
-    int cemento, 
-    int grava, 
-    int arena, 
-    int madera, 
-    int adobe
-    ) {}
+import lombok.Data;
+
+@Data
+public class Materiales {
+        String id;
+        int cemento;
+        int grava;
+        int arena;
+        int madera;
+        int adobe;
+
+}
