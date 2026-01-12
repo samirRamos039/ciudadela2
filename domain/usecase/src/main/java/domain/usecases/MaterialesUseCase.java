@@ -16,13 +16,25 @@ public class MaterialesUseCase {
     }
 
     public Mono<Materiales> createMaterial(Materiales material) {
-        if (material.getAdobe() > 0)
-            return Mono.error(new Exception("Si hay materiales"));
+        if (material.getAdobe() > 1)
+            System.out.println("Si hay materiales");
         return materialesGateway.guardar(material);
     }
 
     public Flux<Materiales> getAllMaterials() {
         return materialesGateway.buscarTodos();
+    }
+
+    public Mono<Materiales> getMaterialById(String id) {
+        return materialesGateway.buscarPorId(id);
+    }
+
+    public Mono<Materiales> updateMaterial(String id, Materiales material) {
+        return materialesGateway.actualizar(id, material);
+    }
+
+    public Mono<Materiales> deleteMaterial(String id) {
+        return materialesGateway.eliminar(id);
     }
 
 }
