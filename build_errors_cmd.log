@@ -1,0 +1,302 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :compileJava NO-SOURCE
+
+> Task :domain-model:compileJava FAILED
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:3: error: package lombok does not exist
+import lombok.AllArgsConstructor;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:4: error: package lombok does not exist
+import lombok.Builder;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:5: error: package lombok does not exist
+import lombok.Data;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:6: error: package lombok does not exist
+import lombok.NoArgsConstructor;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:10: error: cannot find symbol
+@Data
+ ^
+  symbol: class Data
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:11: error: cannot find symbol
+@NoArgsConstructor
+ ^
+  symbol: class NoArgsConstructor
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:12: error: cannot find symbol
+@AllArgsConstructor
+ ^
+  symbol: class AllArgsConstructor
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:13: error: cannot find symbol
+@Builder(toBuilder = true)
+ ^
+  symbol: class Builder
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:3: error: package lombok does not exist
+import lombok.AllArgsConstructor;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:4: error: package lombok does not exist
+import lombok.Builder;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:5: error: package lombok does not exist
+import lombok.Data;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:6: error: package lombok does not exist
+import lombok.NoArgsConstructor;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:11: error: cannot find symbol
+@Data
+ ^
+  symbol: class Data
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:12: error: cannot find symbol
+@NoArgsConstructor
+ ^
+  symbol: class NoArgsConstructor
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:13: error: cannot find symbol
+@AllArgsConstructor
+ ^
+  symbol: class AllArgsConstructor
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:14: error: cannot find symbol
+@Builder(toBuilder = true)
+ ^
+  symbol: class Builder
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:3: error: package lombok does not exist
+import lombok.AllArgsConstructor;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:4: error: package lombok does not exist
+import lombok.Builder;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:5: error: package lombok does not exist
+import lombok.Data;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:6: error: package lombok does not exist
+import lombok.NoArgsConstructor;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:10: error: cannot find symbol
+@Data
+ ^
+  symbol: class Data
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:11: error: cannot find symbol
+@NoArgsConstructor
+ ^
+  symbol: class NoArgsConstructor
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:12: error: cannot find symbol
+@AllArgsConstructor
+ ^
+  symbol: class AllArgsConstructor
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:13: error: cannot find symbol
+@Builder(toBuilder = true)
+ ^
+  symbol: class Builder
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:3: error: package lombok does not exist
+import lombok.AllArgsConstructor;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:4: error: package lombok does not exist
+import lombok.Builder;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:5: error: package lombok does not exist
+import lombok.Data;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:6: error: package lombok does not exist
+import lombok.NoArgsConstructor;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:10: error: cannot find symbol
+@Data
+ ^
+  symbol: class Data
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:11: error: cannot find symbol
+@NoArgsConstructor
+ ^
+  symbol: class NoArgsConstructor
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:12: error: cannot find symbol
+@AllArgsConstructor
+ ^
+  symbol: class AllArgsConstructor
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:13: error: cannot find symbol
+@Builder(toBuilder = true)
+ ^
+  symbol: class Builder
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:3: error: package lombok does not exist
+import lombok.AllArgsConstructor;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:4: error: package lombok does not exist
+import lombok.Builder;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:5: error: package lombok does not exist
+import lombok.Data;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:6: error: package lombok does not exist
+import lombok.NoArgsConstructor;
+             ^
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:10: error: cannot find symbol
+@Data
+ ^
+  symbol: class Data
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:11: error: cannot find symbol
+@NoArgsConstructor
+ ^
+  symbol: class NoArgsConstructor
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:12: error: cannot find symbol
+@AllArgsConstructor
+ ^
+  symbol: class AllArgsConstructor
+C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:13: error: cannot find symbol
+@Builder(toBuilder = true)
+ ^
+  symbol: class Builder
+40 errors
+
+[Incubating] Problems report is available at: file:///C:/Users/Samir/OneDrive/Desktop/ciudadela2/build2/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':domain-model:compileJava'.
+> Compilation failed; see the compiler output below.
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:10: error: cannot find symbol
+  @Data
+   ^
+    symbol: class Data
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:11: error: cannot find symbol
+  @NoArgsConstructor
+   ^
+    symbol: class NoArgsConstructor
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:12: error: cannot find symbol
+  @AllArgsConstructor
+   ^
+    symbol: class AllArgsConstructor
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:13: error: cannot find symbol
+  @Builder(toBuilder = true)
+   ^
+    symbol: class Builder
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:11: error: cannot find symbol
+  @Data
+   ^
+    symbol: class Data
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:12: error: cannot find symbol
+  @NoArgsConstructor
+   ^
+    symbol: class NoArgsConstructor
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:13: error: cannot find symbol
+  @AllArgsConstructor
+   ^
+    symbol: class AllArgsConstructor
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:14: error: cannot find symbol
+  @Builder(toBuilder = true)
+   ^
+    symbol: class Builder
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:10: error: cannot find symbol
+  @Data
+   ^
+    symbol: class Data
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:11: error: cannot find symbol
+  @NoArgsConstructor
+   ^
+    symbol: class NoArgsConstructor
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:12: error: cannot find symbol
+  @AllArgsConstructor
+   ^
+    symbol: class AllArgsConstructor
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:13: error: cannot find symbol
+  @Builder(toBuilder = true)
+   ^
+    symbol: class Builder
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:10: error: cannot find symbol
+  @Data
+   ^
+    symbol: class Data
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:11: error: cannot find symbol
+  @NoArgsConstructor
+   ^
+    symbol: class NoArgsConstructor
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:12: error: cannot find symbol
+  @AllArgsConstructor
+   ^
+    symbol: class AllArgsConstructor
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:13: error: cannot find symbol
+  @Builder(toBuilder = true)
+   ^
+    symbol: class Builder
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:10: error: cannot find symbol
+  @Data
+   ^
+    symbol: class Data
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:11: error: cannot find symbol
+  @NoArgsConstructor
+   ^
+    symbol: class NoArgsConstructor
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:12: error: cannot find symbol
+  @AllArgsConstructor
+   ^
+    symbol: class AllArgsConstructor
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:13: error: cannot find symbol
+  @Builder(toBuilder = true)
+   ^
+    symbol: class Builder
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:3: error: package lombok does not exist
+  import lombok.AllArgsConstructor;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:4: error: package lombok does not exist
+  import lombok.Builder;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:5: error: package lombok does not exist
+  import lombok.Data;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Activity.java:6: error: package lombok does not exist
+  import lombok.NoArgsConstructor;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:3: error: package lombok does not exist
+  import lombok.AllArgsConstructor;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:4: error: package lombok does not exist
+  import lombok.Builder;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:5: error: package lombok does not exist
+  import lombok.Data;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Contact.java:6: error: package lombok does not exist
+  import lombok.NoArgsConstructor;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:3: error: package lombok does not exist
+  import lombok.AllArgsConstructor;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:4: error: package lombok does not exist
+  import lombok.Builder;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:5: error: package lombok does not exist
+  import lombok.Data;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Opportunity.java:6: error: package lombok does not exist
+  import lombok.NoArgsConstructor;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:3: error: package lombok does not exist
+  import lombok.AllArgsConstructor;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:4: error: package lombok does not exist
+  import lombok.Builder;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:5: error: package lombok does not exist
+  import lombok.Data;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\Tenant.java:6: error: package lombok does not exist
+  import lombok.NoArgsConstructor;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:3: error: package lombok does not exist
+  import lombok.AllArgsConstructor;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:4: error: package lombok does not exist
+  import lombok.Builder;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:5: error: package lombok does not exist
+  import lombok.Data;
+               ^
+  C:\Users\Samir\OneDrive\Desktop\ciudadela2\domain\model\src\main\java\domain\entities\models\User.java:6: error: package lombok does not exist
+  import lombok.NoArgsConstructor;
+               ^
+  40 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+BUILD FAILED in 16s
+1 actionable task: 1 executed

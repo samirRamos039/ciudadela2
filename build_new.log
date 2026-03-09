@@ -1,0 +1,55 @@
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName
+> Task :bootJar SKIPPED
+> Task :jar
+> Task :assemble
+> Task :check
+> Task :build
+> Task :domain-model:compileJava UP-TO-DATE
+> Task :domain-ports:compileJava UP-TO-DATE
+> Task :domain-usecases:compileJava UP-TO-DATE
+> Task :infra-db-adapter:compileJava UP-TO-DATE
+> Task :infra-db-adapter:processResources NO-SOURCE
+> Task :infra-db-adapter:classes UP-TO-DATE
+> Task :infra-db-adapter:jar UP-TO-DATE
+> Task :infra-web-entrypoint:compileJava UP-TO-DATE
+> Task :infra-web-entrypoint:processResources NO-SOURCE
+> Task :infra-web-entrypoint:classes UP-TO-DATE
+> Task :infra-web-entrypoint:jar UP-TO-DATE
+> Task :app-main:compileJava UP-TO-DATE
+> Task :app-main:processResources UP-TO-DATE
+> Task :app-main:classes UP-TO-DATE
+> Task :domain-model:processResources NO-SOURCE
+> Task :domain-model:classes UP-TO-DATE
+> Task :domain-model:jar UP-TO-DATE
+> Task :domain-ports:processResources NO-SOURCE
+> Task :domain-ports:classes UP-TO-DATE
+> Task :domain-ports:jar UP-TO-DATE
+> Task :domain-usecases:processResources NO-SOURCE
+> Task :domain-usecases:classes UP-TO-DATE
+> Task :domain-usecases:jar UP-TO-DATE
+> Task :app-main:bootJar UP-TO-DATE
+> Task :app-main:jar UP-TO-DATE
+> Task :app-main:assemble UP-TO-DATE
+> Task :app-main:check
+> Task :app-main:build
+> Task :domain-model:assemble UP-TO-DATE
+> Task :domain-model:check
+> Task :domain-model:build
+> Task :domain-ports:assemble UP-TO-DATE
+> Task :domain-ports:check
+> Task :domain-ports:build
+> Task :domain-usecases:assemble UP-TO-DATE
+> Task :domain-usecases:check
+> Task :domain-usecases:build
+> Task :infra-db-adapter:assemble UP-TO-DATE
+> Task :infra-db-adapter:check
+> Task :infra-db-adapter:build
+> Task :infra-web-entrypoint:assemble UP-TO-DATE
+> Task :infra-web-entrypoint:check
+> Task :infra-web-entrypoint:build
+
+BUILD SUCCESSFUL in 4s
+16 actionable tasks: 2 executed, 14 up-to-date
