@@ -7,8 +7,13 @@ plugins {
 dependencies {
     implementation project(':infra-web-entrypoint')
     implementation project(':infra-db-adapter')
-    implementation project(':domain-usecases')
+    implementation project(':usecase')
     
+<<<<<<< HEAD
+=======
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+>>>>>>> 2a6218b4e48bf110b4a220b2843814a211e9fd4c
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

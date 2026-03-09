@@ -8,7 +8,7 @@ dependencies {
 
     implementation project(':domain-ports')
     implementation project(':domain-model')
-    implementation project(':domain-usecases')
+    implementation project(':usecase')
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
 }
