@@ -1,7 +1,7 @@
 package crm.handlers;
 
 import domain.entities.models.Tenant;
-import domain.entities.models.gateways.TenantGateway;
+import domain.ports.TenantGateway;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;

@@ -1,7 +1,7 @@
 package crm.handlers;
 
 import domain.entities.models.Activity;
-import domain.entities.models.gateways.ActivityGateway;
+import domain.ports.ActivityGateway;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;

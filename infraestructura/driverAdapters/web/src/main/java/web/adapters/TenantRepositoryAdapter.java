@@ -1,7 +1,7 @@
 package web.adapters;
 
 import domain.entities.models.Tenant;
-import domain.entities.models.gateways.TenantGateway;
+import domain.ports.TenantGateway;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

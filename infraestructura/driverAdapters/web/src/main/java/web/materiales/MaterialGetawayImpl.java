@@ -7,6 +7,8 @@ import domain.entities.models.Materiales;
 import web.materiales.MaterialMongoRepository;
 import domain.ports.MaterialesGateway;
 import org.springframework.beans.factory.annotation.Autowired;
+import web.mappers.MaterialMapper;
+import web.collections.MaterialCollections;
 
 @Repository
 public class MaterialGetawayImpl implements MaterialesGateway {
@@ -37,6 +39,11 @@ public class MaterialGetawayImpl implements MaterialesGateway {
         return materialMongoRepository.findById(id)
                 .flatMap(existingMaterial -> {
                     existingMaterial.setNombre(materiales.getNombre());
+                    existingMaterial.setCemento(materiales.getCemento());
+                    existingMaterial.setGrava(materiales.getGrava());
+                    existingMaterial.setArena(materiales.getArena());
+                    existingMaterial.setMadera(materiales.getMadera());
+                    existingMaterial.setAdobe(materiales.getAdobe());
                     existingMaterial.setPrecio(materiales.getPrecio());
                     existingMaterial.setStock(materiales.getStock());
                     return materialMongoRepository.save(existingMaterial);

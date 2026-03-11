@@ -1,4 +1,4 @@
-package domain.entities.models.gateways;
+package domain.ports;
 
 import domain.entities.models.User;
 import reactor.core.publisher.Flux;

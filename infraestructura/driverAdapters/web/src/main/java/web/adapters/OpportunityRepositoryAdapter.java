@@ -1,7 +1,7 @@
 package web.adapters;
 
 import domain.entities.models.Opportunity;
-import domain.entities.models.gateways.OpportunityGateway;
+import domain.ports.OpportunityGateway;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

@@ -1,7 +1,7 @@
 package web.adapters;
 
 import domain.entities.models.Contact;
-import domain.entities.models.gateways.ContactGateway;
+import domain.ports.ContactGateway;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

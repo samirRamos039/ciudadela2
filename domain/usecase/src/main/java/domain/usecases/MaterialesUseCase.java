@@ -33,7 +33,7 @@ public class MaterialesUseCase {
         return materialesGateway.actualizar(id, material);
     }
 
-    public Mono<Materiales> deleteMaterial(String id) {
+    public Mono<Boolean> deleteMaterial(String id) {
         return materialesGateway.eliminar(id);
     }
 

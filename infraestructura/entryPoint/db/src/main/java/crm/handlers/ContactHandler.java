@@ -1,7 +1,7 @@
 package crm.handlers;
 
 import domain.entities.models.Contact;
-import domain.entities.models.gateways.ContactGateway;
+import domain.ports.ContactGateway;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;

@@ -1,7 +1,7 @@
 package web.adapters;
 
 import domain.entities.models.User;
-import domain.entities.models.gateways.UserGateway;
+import domain.ports.UserGateway;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

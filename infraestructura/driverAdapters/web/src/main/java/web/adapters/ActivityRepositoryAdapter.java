@@ -1,7 +1,7 @@
 package web.adapters;
 
 import domain.entities.models.Activity;
-import domain.entities.models.gateways.ActivityGateway;
+import domain.ports.ActivityGateway;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

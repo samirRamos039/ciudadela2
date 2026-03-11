@@ -11,10 +11,13 @@ public class MaterialCollections {
 
     @Id
     private String id;
+    private String nombre;
     private int cemento;
     private int grava;
     private int arena;
     private int madera;
     private int adobe;
+    private Double precio;
+    private Integer stock;
 
 }
