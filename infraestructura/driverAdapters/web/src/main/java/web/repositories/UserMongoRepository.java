@@ -13,4 +13,6 @@ public interface UserMongoRepository extends ReactiveMongoRepository<UserCollect
     Flux<UserCollection> findAllByTenantId(String tenantId);
 
     Mono<Void> deleteByIdAndTenantId(String id, String tenantId);
+
+    Flux<UserCollection> findAll();
 }

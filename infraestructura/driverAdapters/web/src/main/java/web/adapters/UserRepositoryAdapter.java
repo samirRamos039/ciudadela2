@@ -41,4 +41,10 @@ public class UserRepositoryAdapter implements UserGateway {
     public Mono<Void> deleteById(String id, String tenantId) {
         return repository.deleteByIdAndTenantId(id, tenantId);
     }
+
+    @Override
+    public Flux<User> findAll() {
+        return repository.findAll()
+                .map(mapper::toDomain);
+    }
 }

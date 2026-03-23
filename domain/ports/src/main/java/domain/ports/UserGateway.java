@@ -12,4 +12,6 @@ public interface UserGateway {
     Flux<User> findAllByTenantId(String tenantId);
 
     Mono<Void> deleteById(String id, String tenantId);
+
+    Flux<User> findAll();
 }

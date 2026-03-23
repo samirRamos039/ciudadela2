@@ -45,4 +45,9 @@ public class UserHandler {
 
         return ServerResponse.ok().body(gateway.findAllByTenantId(tenantId), User.class);
     }
+
+    public Mono<ServerResponse> getAllUsers(ServerRequest request) {
+        return ServerResponse.ok().body(gateway.findAll(), User.class);
+    }
+
 }

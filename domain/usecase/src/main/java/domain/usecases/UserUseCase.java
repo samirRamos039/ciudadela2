@@ -30,4 +30,9 @@ public class UserUseCase {
     public Mono<Void> deleteById(String id, String tenantId) {
         return userGateway.deleteById(id, tenantId);
     }
+
+    public Flux<User> findAll() {
+        return userGateway.findAll();
+    }
+
 }

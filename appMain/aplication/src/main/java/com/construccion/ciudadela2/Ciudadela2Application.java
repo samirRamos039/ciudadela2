@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.mongodb.repository.config.EnableReactiveMongoRepositories;
 
 @SpringBootApplication
-@ComponentScan(basePackages = { "com.construccion.ciudadela2", "domain.usecases", "materiales", "web" })
+@ComponentScan(basePackages = { "com.construccion.ciudadela2", "domain.usecases", "materiales", "web", "crm" })
 @EnableReactiveMongoRepositories(basePackages = { "web.materiales", "web.repositories" })
 public class Ciudadela2Application {
 
