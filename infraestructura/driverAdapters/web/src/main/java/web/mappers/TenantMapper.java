@@ -1,37 +1,24 @@
 package web.mappers;
 
 import domain.entities.models.Tenant;
+import lombok.RequiredArgsConstructor;
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 import web.collections.TenantCollection;
 
 @Component
+@RequiredArgsConstructor
 public class TenantMapper {
 
+    private final ModelMapper modelMapper;
+
     public Tenant toDomain(TenantCollection collection) {
-        if (collection == null)
-            return null;
-        return Tenant.builder()
-                .id(collection.getId())
-                .name(collection.getName())
-                .subscriptionPlan(collection.getSubscriptionPlan())
-                .status(collection.getStatus())
-                .domain(collection.getDomain())
-                .createdAt(collection.getCreatedAt())
-                .updatedAt(collection.getUpdatedAt())
-                .build();
+        if (collection == null) return null;
+        return modelMapper.map(collection, Tenant.class);
     }
 
     public TenantCollection toCollection(Tenant domain) {
-        if (domain == null)
-            return null;
-        return TenantCollection.builder()
-                .id(domain.getId())
-                .name(domain.getName())
-                .subscriptionPlan(domain.getSubscriptionPlan())
-                .status(domain.getStatus())
-                .domain(domain.getDomain())
-                .createdAt(domain.getCreatedAt())
-                .updatedAt(domain.getUpdatedAt())
-                .build();
+        if (domain == null) return null;
+        return modelMapper.map(domain, TenantCollection.class);
     }
 }
