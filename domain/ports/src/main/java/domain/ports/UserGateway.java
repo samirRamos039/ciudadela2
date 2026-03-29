@@ -14,4 +14,6 @@ public interface UserGateway {
     Mono<Void> deleteById(String id, String tenantId);
 
     Flux<User> findAll();
+
+    Mono<User> findByEmail(String email);
 }

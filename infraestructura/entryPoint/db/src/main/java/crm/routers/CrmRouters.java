@@ -26,6 +26,8 @@ public class CrmRouters {
     @Bean
     public RouterFunction<ServerResponse> userRoutes(UserHandler handler) {
         return route(POST("/api/users"), handler::create)
+                .andRoute(POST("/api/users/register"), handler::register)
+                .andRoute(POST("/api/users/login"), handler::login)
                 .andRoute(GET("/api/users"), handler::getAll)
                 .andRoute(GET("/api/users/{id}"), handler::getById)
                 .andRoute(GET("/api/users/all"), handler::getAllUsers);

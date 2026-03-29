@@ -47,4 +47,10 @@ public class UserRepositoryAdapter implements UserGateway {
         return repository.findAll()
                 .map(mapper::toDomain);
     }
+
+    @Override
+    public Mono<User> findByEmail(String email) {
+        return repository.findByEmail(email)
+                .map(mapper::toDomain);
+    }
 }
