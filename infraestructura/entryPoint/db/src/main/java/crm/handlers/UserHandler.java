@@ -8,7 +8,8 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
 import java.net.URI;
-
+import org.springframework.web.server.ResponseStatusException;
+import org.springframework.http.HttpStatus;
 @Component
 public class UserHandler {
 
@@ -20,6 +21,7 @@ public class UserHandler {
 
     public Mono<ServerResponse> create(ServerRequest request) {
         return request.bodyToMono(User.class)
+                .switchIfEmpty(Mono.error(new ResponseStatusException(HttpStatus.BAD_REQUEST, "Request body is required")))
                 .flatMap(gateway::save)
                 .flatMap(user -> ServerResponse.created(URI.create("/api/users/" + user.getId()))
                         .bodyValue(user));
@@ -30,7 +32,7 @@ public class UserHandler {
         String tenantId = request.headers().firstHeader("X-Tenant-Id");
 
         if (tenantId == null)
-            return ServerResponse.badRequest().build();
+            return Mono.error(new ResponseStatusException(HttpStatus.BAD_REQUEST, "X-Tenant-Id header is required"));
 
         return gateway.findById(id, tenantId)
                 .flatMap(user -> ServerResponse.ok().bodyValue(user))
@@ -41,7 +43,7 @@ public class UserHandler {
         String tenantId = request.headers().firstHeader("X-Tenant-Id");
 
         if (tenantId == null)
-            return ServerResponse.badRequest().build();
+            return Mono.error(new ResponseStatusException(HttpStatus.BAD_REQUEST, "X-Tenant-Id header is required"));
 
         return ServerResponse.ok().body(gateway.findAllByTenantId(tenantId), User.class);
     }
