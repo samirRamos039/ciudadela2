@@ -1,0 +1,12 @@
+.gradle
+.idea
+.vscode
+build
+*/build
+*/*/build
+bin
+out
+*.log
+!gradle/wrapper/gradle-wrapper.jar
+!gradlew
+!gradlew.bat
